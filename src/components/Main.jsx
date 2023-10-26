@@ -1,9 +1,9 @@
 import React from "react";
-import UICards from "./Chakra/CategoryCards";
-import FeaturedCards from "./Chakra/FeaturedCards";
+import UICards from "./ui/CategoryCards";
+import ProductCard from "./ui/ProductCard";
 import { Flex, Box, Center, Heading } from "@chakra-ui/react";
 
-export default function MainSection() {
+export default function Main() {
   const collections = [
     {
       title: "Men shoes collection",
@@ -68,10 +68,11 @@ export default function MainSection() {
       </Center>
       <Flex justifyContent={"center"} gap={"5px"}>
         {featuredCollections.map((collection) => (
-          <FeaturedCards
+          <ProductCard
             title={collection.title}
             price={collection.price}
             imageURL={collection.imageURL}
+            variant={'elevated'}
           />
         ))}
       </Flex>

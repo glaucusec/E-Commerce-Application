@@ -4,7 +4,7 @@ import { BiLogoVisa, BiLogoMastercard, BiLogoPaypal } from "react-icons/bi";
 import { FaGooglePay } from "react-icons/fa";
 import { Box, Flex, Spacer, Heading } from "@chakra-ui/react";
 
-export default function FooterSection() {
+export default function Footer() {
   return (
     <Box bg="gray.500" w="100%" p={2} color="white">
       <Flex gap={"10px"} alignItems={"center"}>
